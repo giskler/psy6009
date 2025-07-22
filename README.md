@@ -1,0 +1,4 @@
+# Beyond Correlation: A Causal Lens on Vaccine Scepticism
+## PSY 6009 Research Project in Psychological Research Methods with Data Science
+
+This repository contains the analysis code for the MSc dissertation project titled "Beyond Correlation: A Causal Lens on Vaccine Scepticism". The project investigates the causal relationship between vaccine scepticism and the endorsement of conspiracy theories, testing two competing models: 'True Belief' (beliefs drive scepticism) and 'Expressive Responding' (scepticism drives belief endorsement). The analysis employs an instrumental variable (IV) approach using participant age as an instrument.
