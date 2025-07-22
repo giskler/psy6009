@@ -1,0 +1,48 @@
+-------------------------------------------------
+1. Observational Data Variables ('df_scaled')
+-------------------------------------------------
+
+Variable Name:        A
+Description:          Participant's age.
+Role in IV Analysis:  Instrumental Variable (Z)
+Operationalisation:   Self-reported age in years.
+
+---
+
+Variable Name:        V
+Description:          General attitude of scepticism towards vaccines.
+Role in IV Analysis:  Endogenous Predictor (D)
+Operationalisation:   Mean score from the 10-item Attitude and Belief in Vaccination Scale (ABVS). Pro-vaccine items were reverse-scored so higher scores consistently indicate greater scepticism.
+
+---
+
+Variable Name:        C
+Description:          Endorsement of anti-vaccine conspiracy theories.
+Role in IV Analysis:  Outcome Variable (Y)
+Operationalisation:   Mean score from the 7-item Vaccine Conspiracy Beliefs Scale (VBS).
+
+
+-------------------------------------------------
+2. Simulated Data Variables ('sim_express_scaled' & 'sim_true_scaled')
+-------------------------------------------------
+
+These variables were generated in R to test the performance of the IV methodology under known causal structures.
+
+Variable Name:        age
+Description:          A simulated variable acting as the instrument.
+Role in IV Analysis:  Instrumental Variable (Z)
+Operationalisation:   Generated from a normal distribution to act as the exogenous source of variation.
+
+---
+
+Variable Name:        scept
+Description:          A simulated variable representing vaccine scepticism.
+Role in IV Analysis:  Endogenous Predictor (D)
+Operationalisation:   Generated as a function of simulated 'age' (in both models) and simulated 'con' (in the 'True Belief' model only).
+
+---
+
+Variable Name:        con
+Description:          A simulated variable representing conspiracy belief.
+Role in IV Analysis:  Outcome Variable (Y)
+Operationalisation:   Generated as a function of simulated 'scept' (in the 'Expressive Responding' model only) or as an independent variable (in the 'True Belief' model).
