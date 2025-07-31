@@ -223,10 +223,15 @@ df <- df %>%
   mutate(V = rowMeans(select(., starts_with("Vaccine_att_")), na.rm = TRUE)) %>%
   mutate(A = 2023 - Year_born)
 
-# Calculate missing Cronbach's Alpha
+# Calculate Cronbach's Alpha for ABVS
 scepticism_items <- df[, c("Vaccine_att_1", "Vaccine_att_2", "Vaccine_att_3", "Vaccine_att_4", "Vaccine_att_5", "Vaccine_att_6", "Vaccine_att_8", "Vaccine_att_9", "Vaccine_att_10", "Vaccine_att_11")]
 alpha_results <- alpha(scepticism_items)
 print(alpha_results)
+
+# Calculate Cronbach's Alpha for VBS
+conspiracy_items <- df[, c("Vaccine_conspiracy_1", "Vaccine_conspiracy_2", "Vaccine_conspiracy_3", "Vaccine_conspiracy_4", "Vaccine_conspiracy_5", "Vaccine_conspiracy_6", "Vaccine_conspiracy_8")]
+alpha_results2 <- alpha(conspiracy_items)
+print(alpha_results2)
 
 # Calculate standardised coefficient
 columns <- c(40,42,43)
