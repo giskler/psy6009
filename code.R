@@ -167,11 +167,13 @@ sim_true_scaled$v_int <- sim_true_scaled$v_int * -1
 
 sim_express_iv_analysis <- ivmodel(Y = sim_express_scaled$con, 
                                    D = sim_express_scaled$v_int, 
-                                   Z = sim_express_scaled$age)
+                                   Z = sim_express_scaled$age,
+                                   heteroSE = TRUE) 
 
 sim_true_iv_analysis <- ivmodel(Y = sim_true_scaled$con, 
                                 D = sim_true_scaled$v_int, 
-                                Z = sim_true_scaled$age)
+                                Z = sim_true_scaled$age,
+                                heteroSE = TRUE) 
 
 # Print the full summary
 summary(sim_express_iv_analysis)
@@ -245,7 +247,8 @@ df_scaled$conspiracy <- scale(data_subset$C)
 # IV Analysis
 iv_analysis <- ivmodel(Y = df_scaled$conspiracy, 
                        D = df_scaled$scepticism, 
-                       Z = df_scaled$age)
+                       Z = df_scaled$age,
+                       heteroSE = TRUE) 
 
 # Print the full summary to see everything
 summary(iv_analysis)
