@@ -1,12 +1,12 @@
 ##Load required libraries --------------------------------------------------------------------------------------------------------------------------
 
-library(forcats) # For reordering the plot categories
-library(ggplot2) # For creating plots
-library(ivmodel) # For running IV analysis
-library(patchwork) # For combining the plots with | and +
-library(psych)  # For calculating Cronbach's alpha
-library(simDAG) # For simulating data
-library(tidyverse)
+library(forcats) # For reordering the plot categories (v. 1.0.0)
+library(ggplot2) # For creating plots (v. 3.5.1)
+library(ivmodel) # For running IV analysis (v. 1.9.1)
+library(patchwork) # For combining the plots with | and + (v. 1.3.0)
+library(psych)  # For calculating Cronbach's alpha (v. 2.5.3)
+library(simDAG) # For simulating data (v. 0.2.2)
+library(tidyverse) #For general wrangling (v. 2.0.0)
 
 ##Simulated data ------------------------------------------------------------------------------------------------------------------------------------
 
