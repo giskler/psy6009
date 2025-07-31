@@ -286,7 +286,7 @@ ci_plot_horizontal_bold <- ggplot(plot_data, aes(x = estimate, y = model)) +
   scale_fill_manual(values = my_colours) +
   
   labs(
-    title = "Causal Effect of Scepticism on Conspiracy Belief (IV Analysis)",
+    title = "Causal Effect of Scepticism on Conspiracy Beliefs (IV Analysis)",
     x = "Standardized Beta Coefficient (β)",
     y = ""
   ) +
